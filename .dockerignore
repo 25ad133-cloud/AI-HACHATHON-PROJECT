@@ -1,0 +1,14 @@
+# Dependency directories
+**/node_modules
+backend/bin
+node_portable
+
+# Databases and cache
+**/*.db
+**/*.log
+.env
+.devcontainer
+
+# Version control
+.git
+.github

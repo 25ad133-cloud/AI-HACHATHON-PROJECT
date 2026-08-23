@@ -8,11 +8,11 @@ COPY frontend/package.json ./
 COPY frontend/package-lock.json* ./
 RUN npm install
 
-# Fix executable permissions for vite and other binaries
-RUN chmod +x node_modules/.bin/*
-
 # Copy source code relative to the repository root context
 COPY frontend/ ./
+
+# Fix executable permissions for vite and other binaries after copy
+RUN chmod +x node_modules/.bin/*
 
 # Set up build argument for backend URL
 ARG VITE_API_URL
