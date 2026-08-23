@@ -18,7 +18,7 @@ Write-Host "Compiling Java files..."
 # Build the classpath matching all jars in lib directory
 $classpath = "$binDir;${libDir}/*"
 
-$compileCmd = "javac -d `"$binDir`" -cp `"$classpath`" " + ($javaFiles | ForEach-Object { "`"$_`"" }) -join " "
+$compileCmd = "javac -encoding UTF-8 -d `"$binDir`" -cp `"$classpath`" " + ($javaFiles | ForEach-Object { "`"$_`"" }) -join " "
 Invoke-Expression $compileCmd
 
 if ($LASTEXITCODE -eq 0) {

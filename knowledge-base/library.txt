@@ -1,0 +1,9 @@
+Library Hours and Rules:
+The college central library is open from 8:00 AM to 8:00 PM on all working days (Monday to Saturday).
+On Sundays, the library operates on reduced hours, from 9:00 AM to 4:00 PM.
+The library remains closed on public holidays and official college holidays.
+Students can borrow up to 4 books at a time for a maximum duration of 14 days.
+A fine of 5 Rupees per day is charged for late return of books.
+Strict silence must be maintained inside the library premises.
+No food or drinks are allowed inside the reading halls.
+Using mobile phones for calls is strictly prohibited inside the library.

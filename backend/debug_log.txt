@@ -1,0 +1,11 @@
+raw: நூலகம் எப்போது திறக்கும்? | processed: நூலகம் எப்போது திறக்கும்? library open timings hours
+raw: நூலகம் எப்போது திறக்கும்? | processed: நூலகம் எப்போது திறக்கும்? library open timings hours
+raw: What is the minimum attendance? | processed: what is the minimum attendance?
+raw: What is the hostel fee? | processed: what is the hostel fee?
+raw: Attendance minimum evlo? | processed: attendance minimum evlo? how much minimum
+raw: நூலகம் எப்போது திறக்கும்? | processed: நூலகம் எப்போது திறக்கும்? library open timings hours
+raw: What is the capital of France? | processed: what is the capital of france?
+raw: What are the hostel rules? | processed: what are the hostel rules?
+raw: what are the data topic you have know | processed: what are the data topic you have know
+raw: What are the library timings? | processed: what are the library timings?
+raw: What are the exam rules? | processed: what are the exam rules?
