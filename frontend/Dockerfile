@@ -4,11 +4,12 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Install dependencies first (leverage Docker caching)
-COPY package.json ./
+COPY frontend/package.json ./
+COPY frontend/package-lock.json* ./
 RUN npm install
 
-# Copy source code
-COPY . .
+# Copy source code relative to the repository root context
+COPY frontend/ ./
 
 # Set up build argument for backend URL
 ARG VITE_API_URL
@@ -21,7 +22,7 @@ RUN npm run build
 FROM nginx:1.25-alpine
 
 # Copy custom Nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy build artifacts to Nginx html directory
 COPY --from=builder /app/dist /usr/share/nginx/html

@@ -3,10 +3,10 @@ FROM eclipse-temurin:21-jdk-alpine AS builder
 
 WORKDIR /app
 
-# Copy dependency libraries and source files
-COPY lib/ ./lib/
-COPY src/ ./src/
-COPY database/schema.sql ./database/schema.sql
+# Copy dependency libraries and source files from the repository root context
+COPY backend/lib/ ./lib/
+COPY backend/src/ ./src/
+COPY backend/database/schema.sql ./database/schema.sql
 
 # Find all Java source files and compile them recursively
 RUN mkdir bin && \
@@ -23,7 +23,7 @@ COPY --from=builder /app/bin ./bin
 COPY --from=builder /app/lib ./lib
 COPY --from=builder /app/database/schema.sql ./database/schema.sql
 
-# Copy knowledge base files
+# Copy knowledge base files (located in the repository root)
 COPY knowledge-base/ ./knowledge-base/
 
 # Expose HTTP port 8080
